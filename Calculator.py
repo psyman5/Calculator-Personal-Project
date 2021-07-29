@@ -8,20 +8,17 @@ if operation=="dtrigonometry" or operation=="degreetrig" or operation=="dtrig" :
     adj = float(input("Adjacent: "))
     
     if opp ==float("0") :
-        oppzeropreAnswer = math.cos(adj / hyp)
-        math.acos(oppzeropreAnswer)
+        oppzeropreAnswer = math.acos(adj / hyp)
         oppzeroAnswer = math.degrees(oppzeropreAnswer)
         print(oppzeroAnswer)
  
     if adj ==float("0") : 
-        adjzeropreAnswer = math.sin(opp / hyp)
-        math.asin(adjzeropreAnswer)
+        adjzeropreAnswer = math.asin(opp / hyp)
         adjzeroAnswer = math.degrees(adjzeropreAnswer)
         print(adjzeroAnswer)   
   
     if hyp ==float("0") : 
-        hypzeropreAnswer = math.tan(opp / adj)
-        math.atan(hypzeropreAnswer)
+        hypzeropreAnswer = math.atan(opp / adj)
         hypzeroAnswer = math.degrees(hypzeropreAnswer)
         print(hypzeroAnswer)
 else :
