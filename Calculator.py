@@ -1,7 +1,38 @@
 import math
 operation = input("Operation: ")
 
-if operation=="dtrigonometry" or operation=="degreetrig" or operation=="dtrig" :
+#beginning of the side trignometry section
+
+if operation=="sidetrigonometry" or operation=="strig" or operation== "sidetrig" :
+    print("If value unknown, input 0. If a variable, input 1.")
+    opp = float(input("Opposite: "))
+    hyp = float(input("Hypotenuse: "))
+    adj = float(input("Adjacent: "))
+    angleDeg = float(input("Angle in degrees: "))
+    
+    if adj ==float("0") and hyp==float("1") :
+        angleRad = (math.radians(angleDeg))
+        adjpreStrigAnswer = (math.sin(angleRad))
+        adjStrigAnswer = (opp / adjpreStrigAnswer)
+        print(adjStrigAnswer)
+    
+    
+    if hyp ==float("0") and opp==float("1") :
+       angleRad = (math.radians(angleDeg))
+       oppPreStrigAnswer = math.tan(angleRad)
+       oppStrigAsnwer = (adj / oppPreStrigAnswer)
+       print(oppStrigAsnwer)
+        
+        
+    if opp ==float("0") and adj==float("1") :
+        angleRad = (math.radians(angleDeg))
+        hypPreStrigAnswer = math.cos(angleRad)
+        hypStrigAnswer = (hyp / hypPreStrigAnswer)
+        print(hypStrigAnswer)
+
+#beginning of the degree trigonometry section        
+        
+elif operation=="dtrigonometry" or operation=="degreetrig" or operation=="dtrig" :
     print("If value unknown, input 0.")
     opp = float(input("Opposite: "))
     hyp = float(input("Hypotenuse: "))
@@ -21,6 +52,7 @@ if operation=="dtrigonometry" or operation=="degreetrig" or operation=="dtrig" :
         hypzeropreAnswer = math.atan(opp / adj)
         hypzeroAnswer = math.degrees(hypzeropreAnswer)
         print(hypzeroAnswer)
+
 else :
     Number1 = float(input("Number 1: "))
     Number2 = float(input("Number 2: "))
@@ -35,3 +67,4 @@ else :
     if operation=="/" : (print(divisionAnswer))
 
     if operation=="-" : (print(subtractionAnswer))
+
