@@ -53,7 +53,40 @@ elif operation=="dtrigonometry" or operation=="degreetrig" or operation=="dtrig"
         hypzeroAnswer = math.degrees(hypzeropreAnswer)
         print(hypzeroAnswer)
 
-else :
+#start of the percentages section
+elif operation== "%" or operation == "percentages" or operation=="pcnt" :
+    print("1 for Multiplication by Percentages, 2 for Division, 3 for Value Before Deduction, 4 for Tax")
+    percentOperation = float((input(""))
+    if percentOperation ==float("1"):
+            
+        pctNumber1 = float(input("Number 1: ")
+        pctNumber2 = float(input("Number 2: ")
+        pctMultiplicationAnswer = (pctNumber1 * pctNumber2)
+        print(pctMultiplicationAnswer)
+                
+    if percentOperation ==float("2"):
+        pctNumber1 = float(input("Number 1: ")
+        pctNumber2 = float(input("Number 2: ")
+        pctDivisionAnswer = (pctNumber1 * pctNumber2)
+        print(pctDivisionAnswer)
+        
+    if percentOperation ==float("3"):
+        currentValue = float(input("Current Value: "))
+        percentOff = float(input("Percent Off (0.1-100%): "))
+        percent = (percentOff/100)
+        remaining = (1 - percent)
+        pctDeductionAnswer = (currentValue / remaining)
+        print(pctDeduction)
+    
+    if percentOperation ==float("4"):
+        taxBefore = float(input("Original Amount: "))
+        taxPct    = float(input("Tax Percent (0.1-100): "))
+        taxPercentage = (taxPct / 100)
+        taxedAmount = (taxBefore * taxPercentage)
+        print(taxedAmount + taxBefore)
+
+
+    else :
     Number1 = float(input("Number 1: "))
     Number2 = float(input("Number 2: "))
     multiplicationAnswer = float(Number1 * Number2)
@@ -66,5 +99,4 @@ else :
 
     if operation=="/" : (print(divisionAnswer))
 
-    if operation=="-" : (print(subtractionAnswer))
-
+    if operation=="-" : (print(subtractionAnswer)))
