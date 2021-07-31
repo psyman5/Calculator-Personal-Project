@@ -53,6 +53,8 @@ elif operation=="dtrigonometry" or operation=="degreetrig" or operation=="dtrig"
         hypzeroAnswer = math.degrees(hypzeropreAnswer)
         print(hypzeroAnswer)
 
+#beginning of the Percentages section
+
 elif operation== "%" or operation == "percentages" or operation=="pcnt" :
     
     print("One for Multiplication by Percentages, two for Division, three for Value Before Deduction, four for Tax.")
@@ -86,8 +88,8 @@ elif operation== "%" or operation == "percentages" or operation=="pcnt" :
             taxedAmount = (taxBefore * taxPercentage)
             print(taxedAmount + taxBefore)
             
-        
-    if operation=="*" :
+#basic addition, multiplication, subtraction and division
+if operation=="*" :
     
         Number1 = float(input("Number 1: "))
     
@@ -97,7 +99,7 @@ elif operation== "%" or operation == "percentages" or operation=="pcnt" :
         
         print(multiplicationAnswer)
         
-    if operation=="+" :
+if operation=="+" :
             
             Number1 = float(input("Number 1: "))
     
@@ -107,7 +109,7 @@ elif operation== "%" or operation == "percentages" or operation=="pcnt" :
     
             print(additionAnswer)
             
-    if operation=="/" :
+if operation=="/" :
     
             Number1 = float(input("Number 1: "))
     
@@ -117,7 +119,7 @@ elif operation== "%" or operation == "percentages" or operation=="pcnt" :
        
             print(divisionAnswer)
         
-    if operation=="-" : 
+if operation=="-" : 
             
             Number1 = float(input("Number 1: "))
     
@@ -126,3 +128,25 @@ elif operation== "%" or operation == "percentages" or operation=="pcnt" :
             subtractionAnswer = float(Number1 - Number2)
             
             print(subtractionAnswer)
+
+if operation == "circumference" or "ccf" : 
+
+            radius = float(input("Radius: "))
+            
+            pi = 3.1415926535897
+        
+            circumference = (2 * radius * pi)
+            
+            print(circumference)
+            
+if operation == "areacircle" or "ac" : 
+    
+            radius = float(input("Radius: "))
+            
+            pi = 3.1415926535897
+            
+            areaCircle = (radius ** 2 * pi)
+        
+            print(areaCircle) 
+            
+            
