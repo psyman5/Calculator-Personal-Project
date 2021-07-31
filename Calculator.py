@@ -53,59 +53,76 @@ elif operation=="dtrigonometry" or operation=="degreetrig" or operation=="dtrig"
         hypzeroAnswer = math.degrees(hypzeropreAnswer)
         print(hypzeroAnswer)
 
-
-    elif operation== "%" or operation == "percentages" or operation=="pcnt" :
+elif operation== "%" or operation == "percentages" or operation=="pcnt" :
     
-     print("One for Multiplication by Percentages, two for Division, three for Value Before Deduction, four for Tax.")
+    print("One for Multiplication by Percentages, two for Division, three for Value Before Deduction, four for Tax.")
     
-     percentOperation = float(input(" ")
+    percentOperation = (input(""))
     
-    elif percentOperation =="1":
-            
-        pctMNumber1 = float(input("Number 1: ")
-        pctMNumber2 = float(input("Number 2: ")
-        pctMultiplicationAnswer = (pctMNumber1 * pctMNumber2)
-        print(pctMultiplicationAnswer)
+    if  percentOperation ==("1"):    
+            pctMNumber1 = float(input("Number 1: "))
+            pctMNumber2 = float(input("Number 2: "))
+            pctMultiplicationAnswer = (pctMNumber1 * pctMNumber2)
+            print(pctMultiplicationAnswer)
                 
-    if percentOperation == "2" 
-        pctDNumber1 = float(input("Number 1: ")
-        pctDNumber2 = float(input("Number 2: ")
-        pctDivisionAnswer = (pctDNumber1 * pctDNumber2)
-        print(pctDivisionAnswer)
+    if  percentOperation == "2" :
+            pctDNumber1 = float(input("Number 1: "))
+            pctDNumber2 = float(input("Number 2: "))
+            pctDivisionAnswer = (pctDNumber1 * pctDNumber2)
+            print(pctDivisionAnswer)
         
-    elif percentOperation == "3"
-        currentValue = float(input("Current Value: "))
-        percentOff = float(input("Percent Off (0.1-100%): "))
-        percent = (percentOff/100)
-        remainingA = (1 - percent)
-        pctDeductionAnswer = (currentValue / remainingA)
-        print(pctDeductionAnswer)
+    elif percentOperation == "3" :
+            currentValue = float(input("Current Value: "))
+            percentOff = float(input("Percent Off (0.1-100%): "))
+            percent = (percentOff/100)
+            remainingA = (1 - percent)
+            pctDeductionAnswer = (currentValue / remainingA)
+            print(pctDeductionAnswer)
     
-    elif : percentOperation =="4":
-        taxBefore = float(input("Original Amount: "))
-        taxPct    = float(input("Tax Percent (0.1-100): "))
-        taxPercentage = (taxPct / 100)
-        taxedAmount = (taxBefore * taxPercentage)
-        print(taxedAmount + taxBefore)
+    elif percentOperation =="4" :
+            taxBefore = float(input("Original Amount: "))
+            taxPct    = float(input("Tax Percent (0.1-100): "))
+            taxPercentage = (taxPct / 100)
+            taxedAmount = (taxBefore * taxPercentage)
+            print(taxedAmount + taxBefore)
+            
+        
+    if operation=="*" :
+    
+        Number1 = float(input("Number 1: "))
+    
+        Number2 = float(input("Number 2: "))
+    
+        multiplicationAnswer = float(Number1 * Number2)
+        
+        print(multiplicationAnswer)
+        
+    if operation=="+" :
+            
+            Number1 = float(input("Number 1: "))
+    
+            Number2 = float(input("Number 2: "))
 
-
-elif :
-    Number1 = float(input("Number 1: "))
-    Number2 = float(input("Number 2: "))
-    multiplicationAnswer = float(Number1 * Number2)
-    additionAnswer = float(Number1 + Number2)
-    divisionAnswer = float(Number1 / Number2)
-    subtractionAnswer = float(Number1 - Number2)
-    if operation=="*" : (print(multiplicationAnswer))
-
-    if operation=="+" : (print(additionAnswer))
-
-    if operation=="/" : (print(divisionAnswer))
-
-    if operation=="-" : (print(subtractionAnswer))
-
-#to do: fix syntax
-#radius calculator
-#area calculator for different shapes
-#circumference calc
-#algebra???
+            additionAnswer = float(Number1 + Number2)
+    
+            print(additionAnswer)
+            
+    if operation=="/" :
+    
+            Number1 = float(input("Number 1: "))
+    
+            Number2 = float(input("Number 2: "))
+    
+            divisionAnswer = float(Number1 / Number2)
+       
+            print(divisionAnswer)
+        
+    if operation=="-" : 
+            
+            Number1 = float(input("Number 1: "))
+    
+            Number2 = float(input("Number 2: "))
+            
+            subtractionAnswer = float(Number1 - Number2)
+            
+            print(subtractionAnswer)
