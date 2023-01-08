@@ -1,5 +1,5 @@
 # Calculator-Personal-Project
-The Calculator Personal Project
+The Calculator Personal Project /n 
 I started this project in the summer and aimed to build a calculator that was able to do a wide variety of calculations
 as well as various other things. It is text based, but I will soon be switching to a call-number based system 
 and adding compatibility for more than two numbers in a given function at once.
@@ -23,9 +23,9 @@ Once in percentages through one of the calls in the previous parentheses, the ca
 
 That's about it. More features coming soon, such as actual coding.
 
-Planned features:
-Quadratic equations
-Graphing (way down the line)
-Multiplication table output
+Planned features: /n
+Quadratic equations /n
+Graphing (way down the line) /n
+Multiplication table output /n
 
 Thanks for reading! Enjoy!
